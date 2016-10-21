@@ -1,0 +1,144 @@
+<configuration>
+    <params>
+        <param name="pin_number" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <number>320</number>
+        </param>
+        <param name="alf" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="uak" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <syncContacts>true</syncContacts>
+        </param>
+        <param name="avatar" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="rating" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="standin" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <host>node0.online.sberbank.ru</host>
+        </param>
+        <param name="gamification" description="">
+            <type>setting</type>
+            <enabled>false</enabled>
+        </param>
+        <param name="aeroexpress" description="">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="statement" description="">
+            <type>service</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="VMT" description="VISA MoneyTransfer">
+            <type>limit</type>
+            <enabled>true</enabled>
+            <minamount>1</minamount>
+            <maxamount>30000</maxamount>
+            <cumulative>30000</cumulative>
+            <currency>RUB</currency>
+        </param>
+        <param name="MCMS" description="MasterCard MoneySend">
+            <type>limit</type>
+            <enabled>true</enabled>
+            <minamount>1</minamount>
+            <maxamount>30000</maxamount>
+            <cumulative>150000</cumulative>
+            <currency>RUB</currency>
+        </param>
+        <param name="tarifPlanParams" description="">
+            <type>list</type>
+            <enabled>true</enabled>
+            <tarifPlans>
+                <tarifPlan id="0">
+                    <phoneNumbers>
+                        <phoneNumber addInfo="По России бесплатно (МТС, Билайн, Мегафон, Tele2, Yota)" cntr="ru" pin="320" prior="1">900</phoneNumber>
+                        <phoneNumber addInfo="По России бесплатно" cntr="ru" pin="320" prior="2">8-800-555-55-50</phoneNumber>
+                        <phoneNumber addInfo="Из-за границы по тарифу оператора" cntr="other" pin="320" prior="3">+7(495) 500-55-50</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+                <tarifPlan id="1">
+                    <phoneNumbers>
+                        <phoneNumber addInfo="По России бесплатно" cntr="ru" pin="20" prior="1">8-800-555-02-55</phoneNumber>
+                        <phoneNumber addInfo="Из-за границы по тарифу оператора" cntr="other" pin="" prior="2">+7(495) 669-06-38</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+                <tarifPlan id="2">
+                    <phoneNumbers>
+                        <phoneNumber addInfo="По России бесплатно (МТС, Билайн, Мегафон, Tele2, Yota)" cntr="ru" pin="320" prior="1">900</phoneNumber>
+                        <phoneNumber addInfo="По России бесплатно" cntr="ru" pin="320" prior="2">8-800-555-55-50</phoneNumber>
+                        <phoneNumber addInfo="Из-за границы по тарифу оператора" cntr="other" pin="320" prior="3">+7(495) 500-55-50</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+                <tarifPlan id="3">
+                    <phoneNumbers>
+                        <phoneNumber addInfo="По России бесплатно" cntr="ru" pin="" prior="1">8-800-333-22-33</phoneNumber>
+                        <phoneNumber addInfo="Из-за границы по тарифу оператора" cntr="other" pin="" prior="2">+7(495) 544-45-40</phoneNumber>
+                    </phoneNumbers>
+                </tarifPlan>
+            </tarifPlans>
+        </param>
+        <param name="newVersion" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <newVersion>7.1.0</newVersion>
+        </param>
+        <param name="scan_period" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+            <scan_period>7</scan_period>
+        </param>
+        <param name="Manual" description="Руководство пользователя">
+            <type>link</type>
+            <link>
+                http://www.sberbank.ru/common/img/uploaded/files/pdf/Manual_Android.pdf
+            </link>
+        </param>
+        <param name="craudgifting" description="switch for craudgifting">
+            <type>setting</type>
+            <languages enabled="true" localeId="ru"/>
+            <languages enabled="false" localeId="en"/>
+        </param>
+        <param name="moneybox" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="birthday" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="budget" description="Бюджет на сегодня">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="newmarketplace" description="Витрина 7.3.1">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="tips" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="local_tips" description="">
+            <type>setting</type>
+            <enabled>true</enabled>
+        </param>
+        <param name="platformID" description="">
+            <type>setting</type>
+            <platforms>
+                <platform id="2233445566" url="https://google.com/"/>
+                <platform id="3344556677" url="https://google.com/"/>
+            </platforms>
+            <enabled>true</enabled>
+        </param>
+    </params>
+</configuration>
